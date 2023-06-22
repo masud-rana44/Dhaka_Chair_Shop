@@ -1,0 +1,48 @@
+/* 
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------ */
+/* GENERAL STYLES */
+/* ------------------ */
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li a:link,
+.nav-links li a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
