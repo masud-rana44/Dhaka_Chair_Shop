@@ -40,7 +40,7 @@ section {
 header,
 section,
 .footer-content {
-  max-width: 110rem;
+  max-width: 114rem;
   margin: 0 auto;
 }
 
@@ -132,6 +132,11 @@ section,
   grid-template-columns: repeat(2, 1fr);
   margin-top: 6rem;
   column-gap: 8rem;
+}
+
+.hero-img {
+  width: 90%;
+  margin-left: auto;
 }
 
 .header-text-box {
