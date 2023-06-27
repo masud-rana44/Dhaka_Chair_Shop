@@ -30,7 +30,7 @@ Here're the section of the project's:
 <p>1. Clone the repository</p>
 
 ```
-git clone repo_url
+git clone https://github.com/masud-rana44/Dhaka_Chair_Shop
 ```
 
 <h2>💻 Built with</h2>
