@@ -19,7 +19,7 @@ Here're the section of the project's:
 
 <h2>🚀 Demo</h2>
 
-[https://readme-gen.vercel.app/](https://readme-gen.vercel.app/)
+[https://dhaka-chair-shop.netlify.app/](https://dhaka-chair-shop.netlify.app/)
 
 <h2>Project Screenshots:</h2>
 
