@@ -42,17 +42,25 @@
 
   .grid-3-cols {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 6.4rem;
+    gap: 4.8rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 5.6rem;
+  }
+
+  .nav {
+    padding: 2.5rem 3.8rem 2rem;
   }
 
   .hero {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 8rem;
-    row-gap: 6.4rem;
+    row-gap: 8.6rem;
   }
 
   .hero-img {
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -76,18 +84,130 @@
   .footer {
     padding: 6rem 0;
   }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6.5rem;
+
+    /* Hide Navigation */
+    /* display: none; */
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav-links {
+    opacity: 1;
+    transform: translateX(0%);
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .btn--open {
+    display: none;
+  }
+
+  .nav-open .btn--close {
+    display: block;
+  }
+
+  .nav-links li a:link,
+  .nav-links li a:visited {
+    font-size: 2rem;
+  }
 }
 
 /**************************/
-/* BELOW 544px (Phones) */
+/* BELOW 600px (Phones) */
 /**************************/
 
-@media (max-width: 34em) {
+@media (max-width: 37.5em) {
   .grid-3-cols {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 6rem;
   }
 
-  .seciton-features {
+  .seciton-features,
+  .heading-secondary {
     text-align: center;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .testimonial {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 6rem;
+  }
+
+  .testimonial img {
+    display: block;
+  }
+
+  .horizontal-line {
+    margin: 4.8rem 0;
+  }
+
+  .footer-links,
+  .footer-info {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .social-links {
+    padding: 0;
+  }
+}
+
+/**************************/
+/* BELOW 420px (Phones) */
+/**************************/
+
+@media (max-width: 26.25em) {
+  section,
+  .footer-content,
+  .hero {
+    padding: 0 4rem;
+  }
+}
+
+/**************************/
+/* BELOW 300px (Phones) */
+/**************************/
+
+@media (max-width: 20em) {
+  .card-body {
+    padding: 2rem;
+  }
+  .footer-nav-links {
+    font-size: 1.4rem;
+    gap: 1.5rem;
+  }
+
+  .contact-info {
+    gap: 3rem;
+  }
+
+  .contact-info .info {
+    font-size: 1.5rem;
   }
 }
